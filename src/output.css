@@ -588,8 +588,24 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.bottom-\[35px\] {
+  bottom: 35px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
@@ -613,24 +629,28 @@ video {
   display: none;
 }
 
-.h-\[80px\] {
-  height: 80px;
+.h-\[20px\] {
+  height: 20px;
 }
 
-.h-\[90px\] {
-  height: 90px;
+.h-\[320px\] {
+  height: 320px;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[80px\] {
+  height: 80px;
 }
 
 .h-full {
   height: 100%;
 }
 
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-\[75px\] {
-  height: 75px;
+.min-h-\[320px\] {
+  min-height: 320px;
 }
 
 .w-20 {
@@ -649,58 +669,89 @@ video {
   width: 1.5rem;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
 .w-full {
   width: 100%;
+}
+
+.max-w-\[900px\] {
+  max-width: 900px;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
   align-items: center;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 .justify-between {
   justify-content: space-between;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
-.gap-7 {
-  gap: 1.75rem;
-}
-
-.gap-8 {
-  gap: 2rem;
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
 }
 
-.gap-10 {
-  gap: 2.5rem;
+.gap-6 {
+  gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-\[10px\] {
+  gap: 10px;
+}
+
+.gap-\[14px\] {
+  gap: 14px;
+}
+
+.gap-\[30px\] {
+  gap: 30px;
+}
+
+.gap-\[60px\] {
+  gap: 60px;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .border {
   border-width: 1px;
 }
 
-.bg-bg {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 251 253 / var(--tw-bg-opacity, 1));
-}
-
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity, 1));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\'\.\/assets\/images\/index\/section-1\.jpg\'\)\] {
   background-image: url('./assets/images/index/section-1.jpg');
-}
-
-.bg-contain {
-  background-size: contain;
 }
 
 .bg-cover {
@@ -716,9 +767,48 @@ video {
   padding-right: 3rem;
 }
 
+.px-\[19px\] {
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.px-\[23px\] {
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.pb-\[19px\] {
+  padding-bottom: 19px;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
+}
+
+.text-\[28px\] {
+  font-size: 28px;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 @media (min-width: 640px) {
-  .sm\:h-\[500px\] {
-    height: 500px;
+  .sm\:block {
+    display: block;
   }
 }
 
@@ -727,38 +817,54 @@ video {
     display: block;
   }
 
-  .md\:hidden {
-    display: none;
-  }
-
   .md\:h-\[120px\] {
     height: 120px;
   }
 
-  .md\:h-\[650px\] {
-    height: 650px;
-  }
-
-  .md\:w-32 {
-    width: 8rem;
-  }
-
-  .md\:w-28 {
-    width: 7rem;
-  }
-
-  .md\:w-2 {
-    width: 0.5rem;
+  .md\:h-\[500px\] {
+    height: 500px;
   }
 
   .md\:w-24 {
     width: 6rem;
   }
+
+  .md\:w-\[480px\] {
+    width: 480px;
+  }
+
+  .md\:w-\[650px\] {
+    width: 650px;
+  }
+
+  .md\:gap-\[100px\] {
+    gap: 100px;
+  }
+
+  .md\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .md\:text-\[38px\] {
+    font-size: 38px;
+  }
 }
 
 @media (min-width: 1024px) {
-  .lg\:h-\[800px\] {
-    height: 800px;
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:h-\[750px\] {
+    height: 750px;
+  }
+
+  .lg\:gap-\[30px\] {
+    gap: 30px;
+  }
+
+  .lg\:pl-\[200px\] {
+    padding-left: 200px;
   }
 }
 
@@ -771,26 +877,12 @@ video {
     display: none;
   }
 
-  .xl\:h-\[970px\] {
-    height: 970px;
-  }
-
-  .xl\:w-full {
-    width: 100%;
+  .xl\:h-\[900px\] {
+    height: 900px;
   }
 
   .xl\:gap-8 {
     gap: 2rem;
-  }
-
-  .xl\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .xl\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 
   .xl\:px-3 {

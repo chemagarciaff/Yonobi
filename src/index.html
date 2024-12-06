@@ -17,11 +17,11 @@
         <div class="header__container container mx-auto px-12 xl:px-3 h-full  flex items-center justify-between">
             <div class="logo-nav flex  items-center gap-6">
                 <img class="w-6 xl:hidden" src="./assets/images/index/bars.png" alt="">
-                <img class="w-20 md:w-24" src="./assets/images/index/yonobi-logo_black_7ebfd2b7-ee31-451a-b765-c17e432e7550.svg"
-                    alt="">
+                <img class="w-20 md:w-24"
+                    src="./assets/images/index/yonobi-logo_black_7ebfd2b7-ee31-451a-b765-c17e432e7550.svg" alt="">
                 <!-- La linea de debajo comentada da problemas ya que no se oculta por resoluciones menores a md -->
                 <ul class="hidden xl:flex xl:gap-8">
-                <!-- <ul class="flex gap-8"> -->
+                    <!-- <ul class="flex gap-8"> -->
                     <li class="list-item"><a href="" class="list-link">PINCH POT CAFÉ</a></li>
                     <li class="list-item"><a href="" class="list-link">POTTERY WORKSHOPS</a></li>
                     <li class="list-item"><a href="./pages/ceramic-store.html" class="list-link">CERAMIC STORE</a></li>
@@ -30,7 +30,7 @@
             </div>
             <div class="shop-info flex items-center gap-5">
                 <img class="block w-5" src="./assets/images/index/lens.png" alt="">
-                <p class="md:block hidden">SEARCH</p>
+                <p class="md:block hidden">SEARCH</p>sdsa
                 <p class="md:block w-4 hidden">ES</p>
                 <p class="md:block hidden">EN</p>
                 <p class="block"> BAG (0)</p>
@@ -39,10 +39,67 @@
     </header>
 
 
-    <main>
-       
-    </main>
+    <main class="flex flex-col justify-center gap-[60px] md:gap-[100px]">
+        <!-- Seccion primera con imagen de fondo -->
+        <section
+            class="section-1 relative w-full h-[320px] md:h-[500px] lg:h-[750px] xl:h-[900px] flex items-center bg-[url('./assets/images/index/section-1.jpg')] bg-cover bg-center">
+            <article
+                class="h-[320px] relative z-10 flex flex-col justify-between px-[19px] pb-[19px] w-full md:w-[650px] lg:pl-[200px] lg:gap-[30px]">
+                <div class="section-1__title flex flex-col gap-[10px]">
+                    <p class="text-white text-[16px] "> Find The Perfect Gift</p>
+                    <h1 class="text-white text-[28px] md:text-[38px]">Thoughtful Gifts for Christmas</h1>
+                </div>
+                <div class="section-1__info flex flex-col gap-[30px]">
+                    <p class="text-white text-[16px] ">This Christmas, find something special with Yonobi’s selection of
+                        handcrafted ceramics. Each piece is designed with care and a focus on simple beauty, perfect for
+                        the calm, cozy moments that make this season meaningful.</p>
+                    <button class="text-white w-[200px] h-[60px] bg-black">DISCOVER NOW</button>
+                </div>
+            </article>
+        </section>
 
+        <!-- Opiniones/valoraciones -->
+        <div class="mx-auto flex items-center gap-[14px]">
+            <p class="font-sans hidden lg:block">Vores kunder siger</p>
+            <p class="font-sans font-semibold hidden sm:block text-[18px]">FREMRAGENDE</p>
+            <div class="stars flex gap-1">
+                <img class="w-[20px] h-[20px]" src="./assets/images/index/green-star.png" alt="">
+                <img class="w-[20px] h-[20px]" src="./assets/images/index/green-star.png" alt="">
+                <img class="w-[20px] h-[20px]" src="./assets/images/index/green-star.png" alt="">
+                <img class="w-[20px] h-[20px]" src="./assets/images/index/green-star.png" alt="">
+                <img class="w-[20px] h-[20px]" src="./assets/images/index/green-star.png" alt="">
+            </div>
+            <p class="font-sans hidden md:block"><span class="font-sans font-semibold">4.8</span> ud af 5 baseret på
+                <span class="font-sans font-semibold">224 anmeldelser</span></p>
+            <img class="w-[100px]" src="./assets/images/index/star-trustpilot.png" alt="">
+        </div>
+
+        <!-- Section 2 -->
+        <section class="section-2 max-w-[900px] mx-auto border">
+            <div>
+                de
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="section-3 relative w-full overflow-hidden">
+            <video class="w-full h-full min-h-[320px]" src="./assets/videos/yonobi.mp4" autoplay loop muted></video>
+            <article
+                class="absolute bottom-[35px] left-0 z-10 flex flex-col px-[23px] pb-[19px] w-full md:w-[480px] gap-8">
+                <div class="section-3__title flex flex-col gap-[10px]">
+                    <p class="text-white text-[16px] "> Discover</p>
+                    <h1 class="text-white text-[28px] md:text-[30px]">YONOBI PINCH POT CAFÉ</h1>
+                </div>
+                <div class="section-3__info">
+                    <p class="text-white text-[16px] ">The Pinch Pot Café takes its name from the pinching technique, a
+                        simple method of shaping clay using only your fingers, without the use of a pottery wheel. At
+                        our Pinch Pot Café, the focus is on hand-building, where you can create small ceramics like
+                        bowls, cups, or sculptures at your own pace, guided by your creativity and our specially made
+                        tutorials.</p>
+                </div>
+            </article>
+        </section>
+    </main>
 
     <footer>
 
