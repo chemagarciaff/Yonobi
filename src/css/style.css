@@ -1,0 +1,25 @@
+@font-face{
+    font-family: 'Caslon';
+    src: url(./../typos/CaslonOldFaceBT-Roman.otf);
+}
+
+:root{
+    --bg: #FAFBFD;
+    --text-color: #555
+}
+
+*{
+    font-family: Caslon;
+    color: var(--text-color);
+}
+header{
+    font-size: 15px;
+}
+
+.section-1::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
