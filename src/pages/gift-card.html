@@ -19,21 +19,21 @@
                 <img class="w-6 xl:hidden" src="./../assets/images/index/bars.png" alt="">
                 <img class="w-20 md:w-24"
                     src="./../assets/images/index/yonobi-logo_black_7ebfd2b7-ee31-451a-b765-c17e432e7550.svg" alt="">
-                <!-- La linea de debajo comentada da problemas ya que no se oculta por resoluciones menores a md -->
-                <ul class="hidden xl:flex xl:gap-8">
-                    <!-- <ul class="flex gap-8"> -->
-                    <li class="list-item"><a href="" class="list-link">PINCH POT CAFÉ</a></li>
-                    <li class="list-item"><a href="" class="list-link">POTTERY WORKSHOPS</a></li>
+                <!-- La linea de debajo comentada da problemas ya que no se oculta por resoluciones menores a md --> 
+                <ul class="hidden xl:flex xl:gap-8"> 
+                    <!-- <ul class="flex gap-8"> --> 
+                    <li class="list-item"><a href="" class="list-link">PINCH POT CAFÉ <i class="fa-solid fa-chevron-down ml-[5px] text-[10px] inline-block"></i> </a ></li>
+                    <li class="list-item"><a href="" class="list-link">POTTERY WORKSHOPS <i class="fa-solid fa-chevron-down ml-[5px] text-[10px] inline-block"></i> </a></li>
                     <li class="list-item"><a href="./ceramic-store.html" class="list-link">CERAMIC STORE</a></li>
                     <li class="list-item"><a href="#" class="list-link">GIFT CARD</a></li>
                 </ul>
             </div>
             <div class="shop-info flex items-center gap-5">
                 <img class="block w-5" src="./../assets/images/index/lens.png" alt="">
-                <p class="md:block hidden">SEARCH</p>
-                <p class="md:block w-4 hidden">ES</p>
-                <p class="md:block hidden">EN</p>
-                <p class="block"> BAG (0)</p>
+                <p class=" hover:underline md:block hidden">SEARCH</p>
+                <p class=" hover:underline md:block w-4 hidden">ES</p>
+                <p class=" hover:underline md:block hidden">EN</p>
+                <p class=" hover:underline block"> BAG (0)</p>
             </div>
         </div>
     </header>
@@ -180,7 +180,66 @@
     </main>
 
 
-    
+    <footer class="w-full bg-white pt-16">
+        <div class="container max-w-[1300px] mx-auto pl-16 md:pl-4">
+            <section class="mx-auto flex items-center flex-col md:flex-row">
+                <div class=" w-full md:w-[50%] flex flex-col">
+                    <h2 class="text-lg font-semibold">JOIN THE POTTERY COMMUNITY</h2>
+                    <p class="mb-16 mt-4 tracking-[2px]">Be the first to see our new products and receive special offers.</p>
+                    <form action="" class="flex flex-col gap-3">
+                        <input type="text" name="name" id="" placeholder="Name" class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
+                        <input type="text" name="email" id="" placeholder="Email" class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
+                        <button class="w-[400px] border border-black h-[50px]"> SUBSCRIBE</button>
+                    </form>
+                </div>
+                <img src="./../assets/images/index/greenkei_1_1_1296x.jpg" alt="" class="hidden md:block md:w-[400px] lg:w-[600px] h-[400px]">
+            </section>
+            <section class="mt-32 mx-auto flex items-center flex-col md:flex-row">
+                <div class="flex flex-col gap-10 w-full md:w-[50%]">
+                    <img src="./../assets/images/index/Captura de pantalla 2024-12-07 223733.png" alt="" class="w-[120px] mb-4">
+                    <p class="tracking-[2px]">Opening hours in Copenhagen, Aarhus and Odense</p>
+                    <p>Please check our individual cafés pages for opening hours during december.</p>
+                    <div class="rrss flex gap-4 mt-12">
+                        <i class="text-black text-xl fa-brands fa-facebook"></i>
+                        <i class="text-black text-xl fa-brands fa-pinterest"></i>
+                        <i class="text-black text-xl fa-brands fa-instagram"></i>
+                        <i class="text-black text-xl fa-brands fa-tiktok"></i>
+                        <i class="text-black text-xl fa-brands fa-twitter"></i>
+                    </div>
+                    
+                </div>
+
+                <div class=" w-full md:w-[50%] flex justify-evenly pt-8">
+                    <ul class=""> Yonobi
+                        <li class="underline text-xs tracking-[1px] mt-12">About Us</li>
+                        <li class="my-4 underline text-xs tracking-[1px]">Smiley Report</li>
+                        <li class="underline text-xs tracking-[1px]">Sustainability</li>
+                    </ul>
+                    <ul class="">Locations
+                        <li class="underline text-xs tracking-[1px] mt-12">Copenhagen</li>
+                        <li class="my-4 underline text-xs tracking-[1px]">Odense</li>
+                        <li class="underline text-xs tracking-[1px]">Aarhus</li>
+                    </ul>
+                    
+                    <ul class="">Contact
+                        <li class="underline text-xs tracking-[1px] mt-12">Contact Us</li>
+                    </ul>
+                    <ul class="">Legal
+                        <li class="underline text-xs tracking-[1px] mt-12">Terms and Conditions</li>
+                        <li class="my-4 underline text-xs tracking-[1px]">Cookie Policy</li>
+                        <li class="underline text-xs tracking-[1px]">Privacy Policy</li>
+                    </ul>
+                </div>
+                
+            </section>
+            
+            <section class="w-full flex justify-between border border-white border-t-black pt-12 mt-8">
+                <p>&#169 YONOBI</p>
+                <img src="./../assets/images/index/payment.png" alt="" class="w-[300px] mb-16">
+
+            </section>
+        </div>
+    </footer>
 </body>
 
 </html>
