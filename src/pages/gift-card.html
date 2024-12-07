@@ -16,12 +16,12 @@
     <header class="w-full h-[80px] md:h-[120px] ">
         <div class="header__container container mx-auto px-12 xl:px-3 h-full  flex items-center justify-between">
             <div class="logo-nav flex  items-center gap-6">
-                <img class="w-6 xl:hidden" src="./assets/images/index/bars.png" alt="">
-                <img class="w-20 md:w-24" src="./assets/images/index/yonobi-logo_black_7ebfd2b7-ee31-451a-b765-c17e432e7550.svg"
-                    alt="">
+                <img class="w-6 xl:hidden" src="./../assets/images/index/bars.png" alt="">
+                <img class="w-20 md:w-24"
+                    src="./../assets/images/index/yonobi-logo_black_7ebfd2b7-ee31-451a-b765-c17e432e7550.svg" alt="">
                 <!-- La linea de debajo comentada da problemas ya que no se oculta por resoluciones menores a md -->
                 <ul class="hidden xl:flex xl:gap-8">
-                <!-- <ul class="flex gap-8"> -->
+                    <!-- <ul class="flex gap-8"> -->
                     <li class="list-item"><a href="" class="list-link">PINCH POT CAFÉ</a></li>
                     <li class="list-item"><a href="" class="list-link">POTTERY WORKSHOPS</a></li>
                     <li class="list-item"><a href="" class="list-link">CERAMIC STORE</a></li>
@@ -29,7 +29,7 @@
                 </ul>
             </div>
             <div class="shop-info flex items-center gap-5">
-                <img class="block w-5" src="./assets/images/index/lens.png" alt="">
+                <img class="block w-5" src="./../assets/images/index/lens.png" alt="">
                 <p class="md:block hidden">SEARCH</p>
                 <p class="md:block w-4 hidden">ES</p>
                 <p class="md:block hidden">EN</p>
@@ -39,12 +39,126 @@
     </header>
 
 
-    <main>
-       
+    <main class="flex flex-col items-center">
+        <!-- Section 1 -->
+        <section class="gc-section-1 mt-10">
+            <div class="container flex flex-col md:flex-row gap-8 px-16 md:px-0 mb-32">
+                <img src="./../assets/images/gift-card/section-1.jpg" alt=""
+                    class="w-full md:w-[280px] md:h-[280px] lg:w-[440px] lg:h-[440px] xl:w-[630px] xl:h-[630px]">
+                <div class="gc-section-1__info w-full  md:w-[300px]  lg:w-[450px] flex flex-col gap-4 lg:px-8">
+                    <p class="text-xs">YONOBI</p>
+                    <h2 class="text-3xl tracking-[6px]">YONOBI GIFT CARD</h2>
+                    <select name="" id=""
+                        class="w-full border border-black bg-transparent h-[60px] text-center text-[18px]">
+                        <option value="">Pinch-pot: Make your own mug</option>
+                    </select>
+                    <div class="flex gap-[8px] my-8">
+                        <div
+                            class="amount w-[30%]  h-[60px] flex justify-between items-center px-[7px] border border-black bg-white">
+                            <p class="text-2xl">–</p>
+                            <p class="">1</p>
+                            <p class="text-2xl">+</p>
+                        </div>
+                        <div class="add-to-cart w-[70%]">
+                            <p
+                                class="w-full h-full  text-white hover:text-[#384D40] bg-[#384D40] hover:bg-white text-center border border-black pt-4">
+                                ADD TO CART €34,05</p>
+                        </div>
+                    </div>
+                    <div class="w-full border border-[#FAFBFD] border-y-black flex flex-col gap-4">
+                        <div class="flex justify-between mt-4">
+                            <p>DESCRIPTION</p>
+                            <p class="mr-6 text-lg">–</p>
+                        </div>
+                        <p class="font-semibold">YŌNOBI Studio Gift Card – The Perfect Creative Gift</p>
+                        <p class="text-[13px] tracking-[1px]">Looking for a thoughtful and unique gift? A <span
+                                class="font-semibold">YŌNOBI Studio Gift Card</span>lets your
+                            loved ones
+                            experience the joy of pottery at their own pace.</p>
+                        <p class="font-semibold">Why Choose a YŌNOBI Gift Card?</p>
+                        <ul class="list-disc flex flex-col gap-4">
+                            <li class="relative left-5 text-[13px] tracking-[1px]"><span class="font-semibold">Flexible
+                                    Options:</span> Recipients can choose from a wide range of ceramic
+                                classes.</li>
+                            <li class="relative left-5 text-[13px] tracking-[1px]"><span class="font-semibold">5-Year
+                                    Validity: </span> Plenty of time to find the perfect class.</li>
+                            <li class="relative left-5 text-[13px] tracking-[1px]"><span class="font-semibold">New
+                                    Experiences Added Regularly:</span> Always something fresh to discover!</li>
+
+                        </ul>
+                        <p class="font-semibold">Delivery Options:</p>
+                        <ul class="list-disc flex flex-col gap-4">
+                            <li class="relative left-5 text-[13px] tracking-[1px]"><span class="font-semibold">Digital
+                                    Gift Card:</span> Recipients can choose from a wide range of ceramic
+                                classes.</li>
+                            <li class="relative left-5 text-[13px] tracking-[1px]"><span class="font-semibold">Physical
+                                    Gift Card: </span> Plenty of time to find the perfect class.</li>
+                            <li class="relative left-5 text-[13px] tracking-[1px]">Physical cards and gift wrapping are
+                                also available at our <span class="font-semibold">Aarhus, Copenhagen, and
+                                    Odense</span> locations</li>
+                        </ul>
+                        <p class="text-[13px] tracking-[1px]"><span class="font-semibold">Important:</span> Discounts
+                            cannot be applied to gift card purchases.</p>
+                        <p class="font-semibold text-[14px] tracking-[1px]">In 2025, pottery classes will only be
+                            offered in Copenhagen, so gift cards for classes are
+                            limited to this location. Pinch pot gift cards remain available in Aarhus.</p>
+                        <p class="text-[13px] tracking-[1px] mb-4">Give the gift of creativity and inspire someone to
+                            explore the world of ceramics!</p>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section 2 -->
+        <section class="gc-section-2 w-full bg-white">
+            <div class="container mx-auto max-w-[1300px]">
+
+                <h2 class=" text-black text-[28px] my-[75px] tracking-[4px]">YOU MAY ALSO BE INTERESTED IN...</h2>
+                <div class="flex flex-col items-center md:grid md:grid-cols-2 xl:grid-cols-4 gap-10">
+
+                    <article class="w-[500px] md:w-[300px] lg:w-[450px] xl:w-[275px]">
+                        <img src="./../assets/images/gift-card/section-2-1.jpg" alt=""
+                            class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
+                        <p class="text-sm mt-[30px] tracking-[1px] underline">Physical Giftcard and wrapping</p>
+                        <p class="text-md tracking-[1px] my-6">
+                            Do you want to make your gift card extra special? Our physical gift card adds a personal
+                            touch with gift wrapping and...</p>
+                        <p class="text-xs mt-[30px]">€1.95</p>
+                    </article>
+
+                    <article class="w-[500px] md:w-[300px] lg:w-[450px] xl:w-[275px]">
+                        <img src="./../assets/images/gift-card/section-2-2.jpg" alt=""
+                            class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
+                        <p class="text-sm mt-[30px] tracking-[1px] underline">YONOBI Custom amount gift card</p>
+                        <p class="text-md tracking-[1px] my-6">
+                            Gift a loved one a custom amount gift card, redeemable for both courses and ceramics in our
+                            online shop and physical ...
+                        </p>
+                        <p class="text-xs mt-[30px]">€13.67</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section 3 -->
+        <section class="gc-section-3">
+
+        </section>
+
+        <!-- Section 4 -->
+        <section class="gc-section-4">
+
+        </section>
+
     </main>
 
 
-    <footer>
+    <footer class="h-48">
 
     </footer>
 </body>
