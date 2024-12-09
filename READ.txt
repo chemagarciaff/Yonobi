@@ -1,0 +1,12 @@
+Aquí dejo mi proyecto de Tailwind. La página a copiar es https://yonobi.com/
+
+Las paginas creadas se pueden visitar desde el nav del header. 
+La primera pagina corresponde a PITCH POT CAFÉ (index)
+La segunda a CERAMIN STORE
+La tercera a GIFT CARD
+
+El diseño responsivo de la pagina esta trabajado meticulosamente y contiene muchos detalles para que se adapte a todas las resoluciones.
+
+El proyecto incluye también algunas funcionalidades con JavaScript, como el funcionamiento del Alert inicial, el funcionamiento del menú de hamburguesa que funciona en las 3 paginas y la validación del formulario que se encuentra en el footer de las 3 paginas también.
+
+(La contraseña debe contener mínimo: una mayúscula, una minúscula, un numero y 8 caracteres mínimo).

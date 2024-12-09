@@ -9,6 +9,7 @@ let body = document.getElementById('body');
 let alert = document.getElementById('alert');
 
 
+
 // Alert al abrir la pagina:
 x.addEventListener('click', () => {
     alert.classList.add('hidden');
@@ -94,12 +95,5 @@ inputPassword.addEventListener('change', () => {
     
 })
 
-
-
-
-// Validacion del formulario
-suscribe_form.addEventListener('submit', (event) => {
-    event.preventDefault();
-})
 
 

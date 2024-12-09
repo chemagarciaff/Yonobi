@@ -50,15 +50,6 @@ inputPassword.addEventListener('change', () => {
 
 
 
-
-// Validacion del formulario
-suscribe_form.addEventListener('submit', (event) => {
-    event.preventDefault();
-})
-
-
-
-
 let hide = true;
 
 bars.addEventListener("click", () => {
