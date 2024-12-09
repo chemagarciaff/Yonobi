@@ -49,3 +49,11 @@ header{
     background-color: rgba(0, 0, 0, 0.4);
     position: absolute;
 }
+
+.invalid {
+border: 1px solid red;
+}
+
+.valid {
+border: 1px solid green;
+}
