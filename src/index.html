@@ -13,33 +13,61 @@
 
 <body class="bg-bg w-[100vw] overflow-x-hidden">
 
-    <header class="w-full h-[80px] md:h-[120px] ">
-        <div class="header__container container mx-auto px-12 xl:px-[20px] h-full  flex items-center justify-between">
+    <!-- Empieza HEADER -->
+    <header class="w-full h-[80px] md:h-[120px]">
+
+        <!-- Container -->
+        <div class="header__container container mx-auto px-12 xl:px-3 h-full  flex items-center justify-between">
+
+            <!-- Nav -->
             <div class="logo-nav flex  items-center gap-6">
-                <img class="w-6 xl:hidden" src="./assets/images/index/bars.png" alt="">
-                <img class="w-23 md:w-24"
+                <img class="w-6 xl:hidden hover:cursor-pointer" src="./assets/images/index/bars.png" alt="" id="bars">
+                <img class="w-20 md:w-24"
                     src="./assets/images/index/yonobi-logo_black_7ebfd2b7-ee31-451a-b765-c17e432e7550.svg" alt="">
-                <!-- La linea de debajo comentada da problemas ya que no se oculta por resoluciones menores a md -->
-                <ul class="hidden xl:flex xl:gap-8">
-                    <!-- <ul class="flex gap-8"> -->
-                    <li class="list-item"><a href="" class="list-link">PINCH POT CAFÉ <i class="fa-solid fa-chevron-down ml-[5px] text-[10px] inline-block"></i></a></li>
-                    <li class="list-item"><a href="" class="list-link">POTTERY WORKSHOPS <i class="fa-solid fa-chevron-down ml-[5px] text-[10px] inline-block"></i></a></li>
+
+                <ul class="hidden xl:flex xl:gap-8"> 
+                    <li class="list-item"><a href="#" class="list-link">PINCH POT CAFÉ <i class="fa-solid fa-chevron-down ml-[5px] text-[10px] inline-block"></i> </a ></li>
+                    <li class="list-item"><a href="" class="list-link">POTTERY WORKSHOPS <i class="fa-solid fa-chevron-down ml-[5px] text-[10px] inline-block"></i> </a></li>
                     <li class="list-item"><a href="./pages/ceramic-store.html" class="list-link">CERAMIC STORE</a></li>
                     <li class="list-item"><a href="./pages/gift-card.html" class="list-link">GIFT CARD</a></li>
                 </ul>
             </div>
-            <div class="shop-info flex items-center gap-5 pr-3">
+
+            <!-- Info -->
+            <div class="shop-info flex items-center gap-5 pr-8">
                 <img class="block w-5" src="./assets/images/index/lens.png" alt="">
-                <p class="hover:underline md:block hidden">SEARCH</p>
-                <p class="hover:underline md:block w-4 hidden">ES</p>
-                <p class="hover:underline md:block hidden">EN</p>
-                <p class="hover:underline block"> BAG (0)</p>
+                <p class=" hover:underline md:block hidden">SEARCH</p>
+                <p class=" hover:underline md:block w-4 hidden">ES</p>
+                <p class=" hover:underline md:block hidden">EN</p>
+                <p class=" hover:underline block"> BAG (0)</p>
+            </div>
+        </div>
+
+        <!-- Desplegable - Default oculto -->
+        <div class="desplegable w-full bg-principal relative z-30 flex flex-col gap-8 py-8 shadow-2xl top-0 left-[-100%]" id="dropdown">
+            <ul class="container px-8">
+                <li class="w-full block border border-principal border-b-[#DDD] h-[55px] pl-4 pt-[19px] text-xs tracking-[2px]"><a href="#">POTTERY WORKSHOPS</a></li>
+                <li class="w-full block border border-principal border-y-[#DDD] h-[55px] pl-4 pt-[19px] text-xs tracking-[2px]"><a href="#">PINCH POT CAFÉ</a></li>
+                <li class="w-full block border border-principal border-b-[#DDD] h-[55px] pl-4 pt-[19px] text-xs tracking-[2px]"><a href="./pages/ceramic-store.html">CERAMIC STORE</a></li>
+                <li class="w-full block border border-principal border-b-[#DDD] h-[55px] pl-4 pt-[19px] text-xs tracking-[2px]"><a href="./pages/gift-card.html">GIFT CARD</a></li>
+            </ul>
+
+            <button class="bg-black text-white h-[55px] pt-[6px] mx-8">LOG IN</button>
+
+            <p class="text-center w-full text-xs tracking-[1px]">No account yet? <span class="underline text-xs tracking-[1px]">Create Account</span></p>
+
+            <div class="rrss flex gap-12 justify-center">
+                <i class="text-black text-xl fa-brands fa-facebook"></i>
+                <i class="text-black text-xl fa-brands fa-pinterest"></i>
+                <i class="text-black text-xl fa-brands fa-instagram"></i>
+                <i class="text-black text-xl fa-brands fa-tiktok"></i>
+                <i class="text-black text-xl fa-brands fa-twitter"></i>
             </div>
         </div>
     </header>
 
 
-    <main class="flex flex-col justify-center gap-[60px] md:gap-[100px]">
+    <main class="flex flex-col justify-center gap-[60px] md:gap-[100px] relative">
         <!-- Seccion primera con imagen de fondo -->
         <section
             class="section-1 relative w-full h-[320px] md:h-[500px] lg:h-[750px] xl:h-[900px] flex items-center bg-[url('./assets/images/index/section-1.jpg')] bg-cover bg-center">
@@ -53,7 +81,9 @@
                     <p class="text-white text-[16px] ">This Christmas, find something special with Yonobi’s selection of
                         handcrafted ceramics. Each piece is designed with care and a focus on simple beauty, perfect for
                         the calm, cozy moments that make this season meaningful.</p>
-                    <button class="text-white w-[200px] h-[60px] bg-black">DISCOVER NOW</button>
+                    <button class=" w-[200px] h-[60px] bg-black" id="discover__btn">
+                        <p class="text-white relative " id="btn__text" >DISCOVER NOW</p>
+                    </button>
                 </div>
             </article>
         </section>
@@ -76,44 +106,44 @@
         </div>
 
         <!-- Section 2 -->
-        <section class="section-2 mx-auto">
-            <h2 class=" text-black text-[28px] my-[75px] tracking-[4px]">OUR LOCATIONS</h2>
-            <div class="container flex flex-wrap gap-[30px] content-center xl:w-[1300px]">
-                <article class="location-article w-[300px] flex flex-col gap-[16px]">
+        <section class="section-2 mx-auto px-8">
+            <h2 class=" text-black text-[28px] mb-[75px] md:pl-6 lg:pl-0 tracking-[4px] px-2">OUR LOCATIONS</h2>
+            <div class="container flex flex-wrap gap-[30px] md:pl-6 lg:pl-0 justify-center  items-center xl:w-[1300px]">
+                <article class="location-article w-[290px] flex flex-col gap-[16px]">
                     <div
-                        class="h-[370px] overflow-hidden border bg-[url('./assets/images/index/section-2-first.jpg')] bg-cover bg-center">
+                        class="h-[370px] overflow-hidden border bg-[url('./assets/images/index/section-2-first.jpg')] bg-cover bg-center hover:animate-scale">
                     </div>
                     <h3 class="">PINCH POT CAFÉ IN ODENSE</h3>
                     <p class="text-[12px]  relative top-[-8px]">Our Odense studio is in a beautiful brick...</p>
                     <a href="" class="text-black border border-white border-b-black w-[84px]">SEE MORE</a>
                 </article>
-                <article class="location-article w-[300px] flex flex-col gap-[16px]">
+                <article class="location-article w-[290px] flex flex-col gap-[16px]">
                     <div
-                        class="h-[370px] overflow-hidden border bg-[url('./assets/images/index/section-2-second.jpg')] bg-cover bg-center">
+                        class="h-[370px] overflow-hidden border bg-[url('./assets/images/index/section-2-second.jpg')] bg-cover bg-center hover:animate-scale">
                     </div>
                     <h3 class="">PINCH POT CAFÉ IN ODENSE</h3>
                     <p class="text-[12px]  relative top-[-8px]">Our Odense studio is in a beautiful brick...</p>
                     <a href="" class="text-black border border-white border-b-black w-[84px]">SEE MORE</a>
                 </article>
-                <article class="location-article w-[300px] flex flex-col gap-[16px]">
+                <article class="location-article w-[290px] flex flex-col gap-[16px]">
                     <div
-                        class="h-[370px] overflow-hidden border bg-[url('./assets/images/index/section-2-third.jpg')] bg-cover bg-center">
+                        class="h-[370px] overflow-hidden border bg-[url('./assets/images/index/section-2-third.jpg')] bg-cover bg-center hover:animate-scale">
                     </div>
                     <h3 class="">PINCH POT CAFÉ IN ODENSE</h3>
                     <p class="text-[12px]  relative top-[-8px]">Our Odense studio is in a beautiful brick...</p>
                     <a href="" class="text-black border border-white border-b-black w-[84px]">SEE MORE</a>
                 </article>
-                <article class="location-article w-[300px] flex flex-col gap-[16px]">
+                <article class="location-article w-[290px] flex flex-col gap-[16px]">
                     <div
-                        class="h-[370px] overflow-hidden border bg-[url('./assets/images/index/section-2-fourth.jpg')] bg-cover bg-center">
+                        class="h-[370px] overflow-hidden border bg-[url('./assets/images/index/section-2-fourth.jpg')] bg-cover bg-center hover:animate-scale">
                     </div>
                     <h3 class="">PINCH POT CAFÉ IN ODENSE</h3>
                     <p class="text-[12px]  relative top-[-8px]">Our Odense studio is in a beautiful brick...</p>
                     <a href="" class="text-black border border-white border-b-black w-[84px]">SEE MORE</a>
                 </article>
-                <article class="location-article w-[300px] flex flex-col gap-[16px]">
+                <article class="location-article w-[290px] flex flex-col gap-[16px]">
                     <div
-                        class="h-[370px] overflow-hidden border bg-[url('./assets/images/index/section-2-fifth.jpg')] bg-cover bg-center">
+                        class="h-[370px] overflow-hidden border bg-[url('./assets/images/index/section-2-fifth.jpg')] bg-cover bg-center hover:animate-scale">
                     </div>
                     <h3 class="">PINCH POT CAFÉ IN ODENSE</h3>
                     <p class="text-[12px]  relative top-[-8px]">Our Odense studio is in a beautiful brick...</p>
@@ -195,51 +225,78 @@
 
 
         <!-- Advertisment -->
-        <p class="bg-[#7A4022] text-white text-center text-[13px] pt-[8px] h-[38px] tracking-[2px] w-full">BOOK WITH A FRIEND
+        <p class="bg-[#7A4022] text-white text-center text-[13px] pt-[8px] h-[38px] tracking-[2px] w-full">BOOK WITH A
+            FRIEND
             AND GET 10% OFF YOUR NEXT CLASS</p>
 
 
-        <!--  -->
+        <!-- Section 5-->
         <section class="section-five pb-16">
-            <div class="container flex flex-col md:flex-row relative left-[110px] gap-[50px] md:gap-[170px] md:items-center">
+            <div
+                class="container  flex flex-col md:flex-row relative justify-center mx-auto gap-[50px] md:gap-[170px] md:items-center ">
 
-                <div class="section-five__info w-[370px]">
+                <div class="section-five__info w-[370px] p-4">
                     <p>The Treasury</p>
 
-                    <h2 class=" text-black  text-center sm:text-start text-[28px] mt-[2px] mb-[35px] tracking-[4px] w-[80%]">DISCOVER OUR SELECTION OF HANDMADE CERAMICS</h2>
+                    <h2
+                        class=" text-black  text-center sm:text-start text-[28px] mt-[2px] mb-[35px] tracking-[4px] w-[80%]">
+                        DISCOVER OUR SELECTION OF HANDMADE CERAMICS</h2>
 
-                    <p class="my-[25px]">With a focus on handmade ceramics, we have selected a variety of unique pottery made by artists
+                    <p class="my-[25px]">With a focus on handmade ceramics, we have selected a variety of unique pottery
+                        made by artists
                         from all over the world – telling their stories through their individual designs, materials and
                         techniques</p>
 
-                    <a href="" class="text-black border border-white border-b-black w-[84px]">DISCOVER</a>
+                    <a href="" class=" border border-white border-b-black w-[84px]"><p class="text-black">DISCOVER</p></a>
 
                 </div>
 
-                <div class="bg-[url('./assets/images/index/section-5.jpg')] hidden md:block w-[380px] h-[250px] xl:w-[589px] xl:h-[378px] bg-center bg-cover overflow-hidden rounded-sm"></div>
-                <img src="./assets/images/index/section-5.jpg" alt="" class="w-[500px] block md:hidden">
+                <div
+                    class="bg-[url('./assets/images/index/section-5.jpg')] hidden md:block w-[380px] h-[250px] xl:w-[589px] xl:h-[378px] bg-center bg-cover overflow-hidden rounded-sm">
+                </div>
+                <img src="./assets/images/index/section-5.jpg" alt="" class="w-[500px] block md:hidden mx-auto">
+            
             </div>
 
         </section>
     </main>
+    <!-- Termina MAIN -->
+
+
+
+
+
+    <!-- Empieza FOOTER -->
 
     <footer class="w-full bg-white pt-16">
-        <div class="container max-w-[1300px] mx-auto pl-16 md:pl-4">
-            <section class="mx-auto flex items-center flex-col md:flex-row">
-                <div class=" w-full md:w-[50%] flex flex-col">
+        <div class="container max-w-[1300px] mx-auto pl-16 md:pl-4 flex flex-col items-center">
+            <!-- Primera fila -->
+            <section class="container flex items-center flex-col md:flex-row gap-16">
+                <!-- Primera Fila -->
+                <div class=" w-full md:w-[50%] flex flex-col p-2">
                     <h2 class="text-lg font-semibold">JOIN THE POTTERY COMMUNITY</h2>
-                    <p class="mb-16 mt-4 tracking-[2px]">Be the first to see our new products and receive special offers.</p>
+                    <p class="mb-16 mt-4 tracking-[2px]">Be the first to see our new products and receive special
+                        offers.</p>
                     <form action="" class="flex flex-col gap-3">
-                        <input type="text" name="name" id="" placeholder="Name" class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
-                        <input type="text" name="email" id="" placeholder="Email" class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
-                        <button class="w-[400px] border border-black h-[50px]"> SUBSCRIBE</button>
+                        <input type="text" name="name" id="" placeholder="Name"
+                            class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
+                        <input type="text" name="email" id="" placeholder="Email"
+                            class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
+                        <button class="w-[400px] border border-black h-[50px] text-black hover:text-white hover:bg-black"> SUBSCRIBE</button>
                     </form>
                 </div>
-                <img src="./assets/images/index/greenkei_1_1_1296x.jpg" alt="" class="hidden md:block md:w-[400px] lg:w-[600px] h-[400px]">
+
+                <!-- Segunda fila (imagen) -->
+                <img src="./assets/images/index/greenkei_1_1_1296x.jpg" alt=""
+                    class="hidden md:block w-[40%] h-[380px]">
             </section>
-            <section class="mt-32 mx-auto flex items-center flex-col md:flex-row">
-                <div class="flex flex-col gap-10 w-full md:w-[50%]">
-                    <img src="./assets/images/index/Captura de pantalla 2024-12-07 223733.png" alt="" class="w-[120px] mb-4">
+
+            <!-- Segunda Fila -->
+            <section class="mt-32 flex items-center flex-col md:flex-row container">
+                <!-- Primera columna -->
+                <div class="flex flex-col gap-10 w-full md:w-[50%] p-8">
+                    <img src="./assets/images/index/Captura de pantalla 2024-12-07 223733.png" alt=""
+                        class="w-[120px] mb-4">
                     <p class="tracking-[2px]">Opening hours in Copenhagen, Aarhus and Odense</p>
                     <p>Please check our individual cafés pages for opening hours during december.</p>
                     <div class="rrss flex gap-4 mt-12">
@@ -249,9 +306,10 @@
                         <i class="text-black text-xl fa-brands fa-tiktok"></i>
                         <i class="text-black text-xl fa-brands fa-twitter"></i>
                     </div>
-                    
+
                 </div>
 
+                <!-- Segunda columna -->
                 <div class=" w-full md:w-[50%] flex justify-evenly pt-8">
                     <ul class=""> Yonobi
                         <li class="underline text-xs tracking-[1px] mt-12">About Us</li>
@@ -263,7 +321,7 @@
                         <li class="my-4 underline text-xs tracking-[1px]">Odense</li>
                         <li class="underline text-xs tracking-[1px]">Aarhus</li>
                     </ul>
-                    
+
                     <ul class="">Contact
                         <li class="underline text-xs tracking-[1px] mt-12">Contact Us</li>
                     </ul>
@@ -273,16 +331,19 @@
                         <li class="underline text-xs tracking-[1px]">Privacy Policy</li>
                     </ul>
                 </div>
-                
+
             </section>
-            
-            <section class="w-full flex justify-between border border-white border-t-black pt-12 mt-8">
+
+            <!-- Tercera Fila -->
+            <section class=" container flex justify-between border border-white border-t-black pt-12 mt-8 pr-12">
                 <p>&#169 YONOBI</p>
                 <img src="./assets/images/index/payment.png" alt="" class="w-[300px] mb-16">
 
             </section>
         </div>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

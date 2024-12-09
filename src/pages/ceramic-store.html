@@ -13,28 +13,48 @@
 
 <body class="bg-bg">
 
-    <header class="w-full h-[80px] md:h-[120px] ">
+    <header class="w-full h-[80px] md:h-[120px]">
         <div class="header__container container mx-auto px-12 xl:px-3 h-full  flex items-center justify-between">
             <div class="logo-nav flex  items-center gap-6">
-                <img class="w-6 xl:hidden" src="./../assets/images/index/bars.png" alt="">
+                <img class="w-6 xl:hidden hover:cursor-pointer" src="./../assets/images/index/bars.png" alt="" id="bars">
                 <img class="w-20 md:w-24"
                     src="./../assets/images/index/yonobi-logo_black_7ebfd2b7-ee31-451a-b765-c17e432e7550.svg" alt="">
-                <!-- La linea de debajo comentada da problemas ya que no se oculta por resoluciones menores a md -->
-                <ul class="hidden xl:flex xl:gap-8">
-                    <!-- <ul class="flex gap-8"> -->
-                    <li class="list-item"><a href="" class="list-link">PINCH POT CAFÉ <i class="fa-solid fa-chevron-down ml-[5px] text-[10px] inline-block"></i></a></li>
-                    <li class="list-item"><a href="" class="list-link">POTTERY WORKSHOPS <i class="fa-solid fa-chevron-down ml-[5px] text-[10px] inline-block"></i></a></li>
-                    <li class="list-item  text-black border border-[#FAFBFD] border-b-black w-[130px]"><a href=""
-                            class="list-link">CERAMIC STORE</a></li>
+                <!-- La linea de debajo comentada da problemas ya que no se oculta por resoluciones menores a md --> 
+                <ul class="hidden xl:flex xl:gap-8"> 
+                    <!-- <ul class="flex gap-8"> --> 
+                    <li class="list-item"><a href="./../index.html" class="list-link">PINCH POT CAFÉ <i class="fa-solid fa-chevron-down ml-[5px] text-[10px] inline-block"></i> </a ></li>
+                    <li class="list-item"><a href="" class="list-link">POTTERY WORKSHOPS <i class="fa-solid fa-chevron-down ml-[5px] text-[10px] inline-block"></i> </a></li>
+                    <li class="list-item"><a href="#" class="list-link">CERAMIC STORE</a></li>
                     <li class="list-item"><a href="./gift-card.html" class="list-link">GIFT CARD</a></li>
                 </ul>
             </div>
-            <div class="shop-info flex items-center gap-5">
+            <div class="shop-info flex items-center gap-5 pr-8">
                 <img class="block w-5" src="./../assets/images/index/lens.png" alt="">
-                <p class="hover:underline md:block hidden">SEARCH</p>
-                <p class="hover:underline md:block w-4 hidden">ES</p>
-                <p class="hover:underline md:block hidden">EN</p>
-                <p class="hover:underline block"> BAG (0)</p>
+                <p class=" hover:underline md:block hidden">SEARCH</p>
+                <p class=" hover:underline md:block w-4 hidden">ES</p>
+                <p class=" hover:underline md:block hidden">EN</p>
+                <p class=" hover:underline block"> BAG (0)</p>
+            </div>
+        </div>
+
+        <div class="desplegable w-full bg-principal relative z-15 flex flex-col gap-8 py-8 shadow-2xl relative top-0 left-[-100%]" id="dropdown">
+            <ul class="container px-8">
+                <li class="w-full block border border-principal border-y-[#DDD] h-[55px] pl-4 pt-[19px] text-xs tracking-[2px]"><a href="./../index.html">PINCH POT CAFÉ</a></li>
+                <li class="w-full block border border-principal border-b-[#DDD] h-[55px] pl-4 pt-[19px] text-xs tracking-[2px]"><a href="">POTTERY WORKSHOPS</a></li>
+                <li class="w-full block border border-principal border-b-[#DDD] h-[55px] pl-4 pt-[19px] text-xs tracking-[2px]"><a href=".#">CERAMIC STORE</a></li>
+                <li class="w-full block border border-principal border-b-[#DDD] h-[55px] pl-4 pt-[19px] text-xs tracking-[2px]"><a href="./gift-card.html">GIFT CARD</a></li>
+            </ul>
+
+            <button class="bg-black text-white h-[55px] pt-[6px] mx-8">LOG IN</button>
+
+            <p class="text-center w-full text-xs tracking-[1px]">No account yet? <span class="underline text-xs tracking-[1px]">Create Account</span></p>
+
+            <div class="rrss flex gap-12 justify-center">
+                <i class="text-black text-xl fa-brands fa-facebook"></i>
+                <i class="text-black text-xl fa-brands fa-pinterest"></i>
+                <i class="text-black text-xl fa-brands fa-instagram"></i>
+                <i class="text-black text-xl fa-brands fa-tiktok"></i>
+                <i class="text-black text-xl fa-brands fa-twitter"></i>
             </div>
         </div>
     </header>
@@ -59,7 +79,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-1.png" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -67,7 +87,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-2.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -75,7 +95,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-3.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -83,7 +103,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-4.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -91,7 +111,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-5.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -99,7 +119,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-5.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -107,7 +127,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-7.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -115,7 +135,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-8.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -123,7 +143,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-9.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px] ">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -131,7 +151,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-10.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -139,7 +159,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-11.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -147,7 +167,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-12.png" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -256,7 +276,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-1.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -264,7 +284,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-2.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -272,7 +292,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-3.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -280,7 +300,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-4.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -288,7 +308,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-5.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -296,7 +316,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-6.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -304,7 +324,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-7.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -312,7 +332,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-8.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -320,7 +340,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-9.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px] ">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -328,7 +348,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-10.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -336,7 +356,7 @@
                     <img src="./../assets/images/ceramic-store/section-2-11.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -344,7 +364,7 @@
                     <img src="./../assets/images/ceramic-store/section-6-12.jpg" alt=""
                         class="w-full h-[500px] md:h-[300px] lg:h-[450px] xl:h-[275px]">
                     <h4 class="mt-[30px] tracking-[1px]">Solenne Belloir</h4>
-                    <p class="text-sm text-black border border-[#FAFBFD] border-b-black w-[210px] tracking-[1px]">Wall
+                    <p class="text-sm text-black border border-principal border-b-black w-[210px] tracking-[1px]">Wall
                         sconce candleholder no. 1</p>
                     <p class="text-xs mt-[30px]">€270.95</p>
                 </article>
@@ -396,22 +416,34 @@
 
 
     <footer class="w-full bg-white pt-16">
-        <div class="container max-w-[1300px] mx-auto pl-16 md:pl-4">
-            <section class="mx-auto flex items-center flex-col md:flex-row">
-                <div class=" w-full md:w-[50%] flex flex-col">
+        <div class="container max-w-[1300px] mx-auto pl-16 md:pl-4 flex flex-col items-center">
+            <!-- Primera fila -->
+            <section class="container flex items-center flex-col md:flex-row gap-16">
+                <!-- Primera Fila -->
+                <div class=" w-full md:w-[50%] flex flex-col p-2">
                     <h2 class="text-lg font-semibold">JOIN THE POTTERY COMMUNITY</h2>
-                    <p class="mb-16 mt-4 tracking-[2px]">Be the first to see our new products and receive special offers.</p>
+                    <p class="mb-16 mt-4 tracking-[2px]">Be the first to see our new products and receive special
+                        offers.</p>
                     <form action="" class="flex flex-col gap-3">
-                        <input type="text" name="name" id="" placeholder="Name" class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
-                        <input type="text" name="email" id="" placeholder="Email" class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
+                        <input type="text" name="name" id="" placeholder="Name"
+                            class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
+                        <input type="text" name="email" id="" placeholder="Email"
+                            class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
                         <button class="w-[400px] border border-black h-[50px]"> SUBSCRIBE</button>
                     </form>
                 </div>
-                <img src="./../assets/images/index/greenkei_1_1_1296x.jpg" alt="" class="hidden md:block md:w-[400px] lg:w-[600px] h-[400px]">
+
+                <!-- Segunda fila (imagen) -->
+                <img src="./../assets/images/index/greenkei_1_1_1296x.jpg" alt=""
+                    class="hidden md:block w-[40%] h-[380px]">
             </section>
-            <section class="mt-32 mx-auto flex items-center flex-col md:flex-row">
-                <div class="flex flex-col gap-10 w-full md:w-[50%]">
-                    <img src="./../assets/images/index/Captura de pantalla 2024-12-07 223733.png" alt="" class="w-[120px] mb-4">
+
+            <!-- Segunda Fila -->
+            <section class="mt-32 flex items-center flex-col md:flex-row container">
+                <!-- Primera columna -->
+                <div class="flex flex-col gap-10 w-full md:w-[50%] p-8">
+                    <img src="./../assets/images/index/Captura de pantalla 2024-12-07 223733.png" alt=""
+                        class="w-[120px] mb-4">
                     <p class="tracking-[2px]">Opening hours in Copenhagen, Aarhus and Odense</p>
                     <p>Please check our individual cafés pages for opening hours during december.</p>
                     <div class="rrss flex gap-4 mt-12">
@@ -421,9 +453,10 @@
                         <i class="text-black text-xl fa-brands fa-tiktok"></i>
                         <i class="text-black text-xl fa-brands fa-twitter"></i>
                     </div>
-                    
+
                 </div>
 
+                <!-- Segunda columna -->
                 <div class=" w-full md:w-[50%] flex justify-evenly pt-8">
                     <ul class=""> Yonobi
                         <li class="underline text-xs tracking-[1px] mt-12">About Us</li>
@@ -435,7 +468,7 @@
                         <li class="my-4 underline text-xs tracking-[1px]">Odense</li>
                         <li class="underline text-xs tracking-[1px]">Aarhus</li>
                     </ul>
-                    
+
                     <ul class="">Contact
                         <li class="underline text-xs tracking-[1px] mt-12">Contact Us</li>
                     </ul>
@@ -445,16 +478,19 @@
                         <li class="underline text-xs tracking-[1px]">Privacy Policy</li>
                     </ul>
                 </div>
-                
+
             </section>
-            
-            <section class="w-full flex justify-between border border-white border-t-black pt-12 mt-8">
+
+            <!-- Tercera Fila -->
+            <section class=" container flex justify-between border border-white border-t-black pt-12 mt-8 pr-12">
                 <p>&#169 YONOBI</p>
                 <img src="./../assets/images/index/payment.png" alt="" class="w-[300px] mb-16">
 
             </section>
         </div>
     </footer>
+
+    <script src="./../js/script.js"></script>
 </body>
 
 </html>
