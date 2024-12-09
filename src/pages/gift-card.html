@@ -228,15 +228,15 @@
                     <h2 class="text-lg font-semibold">JOIN THE POTTERY COMMUNITY</h2>
                     <p class="mb-16 mt-4 tracking-[2px]">Be the first to see our new products and receive special
                         offers.</p>
-                    <form action="" class="flex flex-col gap-3">
-                        <input type="text" name="name" id="" placeholder="Name"
-                            class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
-                        <input type="text" name="email" id="" placeholder="Email"
-                            class="w-[400px] h-[50px] border p-2 focus:border-black outline-none">
-                        <button
-                            class="w-[400px] border border-black h-[50px] text-black hover:text-white hover:bg-black">
-                            SUBSCRIBE</button>
-                    </form>
+                        <form action="" class="flex flex-col gap-3" id="suscribeForm">
+                            <input type="text" name="name" id="inputName" placeholder="Name"
+                                class="w-[400px] h-[50px] border p-2 focus:border-black outline-none" required>
+                            <input type="email" name="email" id="inputEmail" placeholder="Email"
+                                class="w-[400px] h-[50px] border p-2 focus:border-black outline-none" required>
+                            <input type="password" name="password" id="inputPassword" placeholder="***********"
+                                class="w-[400px] h-[50px] border p-2 focus:border-black outline-none" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}">
+                            <button class="w-[400px] border border-black h-[50px] text-black hover:text-white hover:bg-black"> SUBSCRIBE</button>
+                        </form>
                 </div>
 
                 <!-- Segunda fila (imagen) -->

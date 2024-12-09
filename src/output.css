@@ -644,12 +644,24 @@ video {
   top: 65%;
 }
 
+.left-\[200px\] {
+  left: 200px;
+}
+
+.left-\[190px\] {
+  left: 190px;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-30 {
   z-index: 30;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-8 {
@@ -775,6 +787,10 @@ video {
   margin-top: 75px;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -793,6 +809,10 @@ video {
 
 .hidden {
   display: none;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .h-\[140px\] {
@@ -897,10 +917,6 @@ video {
 
 .w-\[100px\] {
   width: 100px;
-}
-
-.w-\[100vw\] {
-  width: 100vw;
 }
 
 .w-\[120px\] {
@@ -1036,6 +1052,10 @@ video {
   animation: show 0.5s ease-in-out forwards;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .list-disc {
   list-style-type: disc;
 }
@@ -1144,6 +1164,10 @@ video {
   overflow-x: hidden;
 }
 
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
 .rounded-sm {
   border-radius: 0.125rem;
 }
@@ -1226,6 +1250,20 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#CCC\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 204 204 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#000000CC\] {
+  background-color: #000000CC;
 }
 
 .bg-\[url\(\'\.\/assets\/images\/ceramic-store\/cs-section-1\.jpg\'\)\] {
@@ -1582,14 +1620,14 @@ video {
   cursor: pointer;
 }
 
-.hover\:bg-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:bg-black:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.hover\:bg-white:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .hover\:text-\[\#384D40\]:hover {

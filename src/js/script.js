@@ -4,11 +4,16 @@ let btn__text = document.getElementById("btn__text");
 let discover__btn = document.getElementById("discover__btn");
 let btn__text_suscribe = document.getElementById("btn__text_suscribe");
 let suscribe__btn = document.getElementById("suscribe__btn");
+let x = document.getElementById('x');
+let body = document.getElementById('body');
+let alert = document.getElementById('alert');
 
-let suscribe_form = document.getElementById('suscribe_form');
-let inputName = document.getElementById('inputName');
-let inputEmail = document.getElementById('inputEmail');
-let inputPassword = document.getElementById('inputPassword');
+
+// Alert al abrir la pagina:
+x.addEventListener('click', () => {
+    alert.classList.add('hidden');
+    body.classList.remove('overflow-y-hidden');
+})
 
 
 
@@ -38,57 +43,63 @@ bars.addEventListener("click", () => {
         dropdown.classList.remove("animate-show");
         dropdown.classList.add("animate-hide");
     }
-
+    
     hide = !hide;
 })
 
+let suscribe_form = document.getElementById('suscribe_form');
+let inputName = document.getElementById('inputName');
+let inputEmail = document.getElementById('inputEmail');
+let inputPassword = document.getElementById('inputPassword');
+
+// Del nombre solo se valida que no este vacio
 inputName.addEventListener('change', () => {
-    if(!inputName.validity.valueMissing){
+    if (!inputName.validity.valueMissing) {
         inputName.classList.remove('invalid');
         inputName.classList.add('valid');
-    } else{
+    } else {
         inputName.classList.remove('valid');
         inputName.classList.add('invalid');
     }
 })
 
 inputEmail.addEventListener('change', () => {
-    if(!inputName.validity.valueMissing){
-        inputName.classList.remove('invalid');
-        inputName.classList.add('valid');
-    } else{
-        if(!inputPassword) {
-            inputName.classList.remove('valid');
-            inputName.classList.add('invalid');
-        }else {
-            inputName.classList.remove('invalid');
-            inputName.classList.add('valid');
-        }
+    // Compruebo si esta vacio o no
+    if (!inputEmail.validity.valueMissing) {
+        inputEmail.classList.remove('invalid');
+        inputEmail.classList.add('valid');
+    } else {
+        inputEmail.classList.remove('valid');
+        inputEmail.classList.add('invalid');
     }
 })
 
 inputPassword.addEventListener('change', () => {
-    if(!inputName.validity.valueMissing){
-        inputName.classList.remove('invalid');
-        inputName.classList.add('valid');
-    } else{
-        if(!inputPassword) {
-            inputName.classList.remove('valid');
-            inputName.classList.add('invalid');
-        }else {
-            inputName.classList.remove('invalid');
-            inputName.classList.add('valid');
+    if (!inputPassword.validity.valueMissing) {
+        // Compruebo el patron
+        // Si concuerda
+        if (!inputPassword.validity.patternMismatch) {
+            inputPassword.classList.remove('invalid');
+            inputPassword.classList.add('valid');
+            // Si no concuerda
+        } else {
+            inputPassword.classList.remove('valid');
+            inputPassword.classList.add('invalid');
         }
+        // Si esta vacio
+    } else {
+        inputPassword.classList.remove('valid');
+        inputPassword.classList.add('invalid');
     }
+    
 })
+
+
 
 
 // Validacion del formulario
 suscribe_form.addEventListener('submit', (event) => {
     event.preventDefault();
-    console.log(inputEmail);
-    console.log(inpuName);
-    console.log(inputPassword);
 })
 
 

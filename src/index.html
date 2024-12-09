@@ -11,7 +11,12 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body class="bg-bg w-[100vw] overflow-x-hidden">
+<body class="bg-bg w-full overflow-x-hidden relative overflow-y-hidden" id="body">
+
+    <div class="absolute top-0 left-0 h-[100vh] z-50 w-full bg-[#000000CC] flex flex-col justify-center items-center " id="alert">
+        <p class="relative left-[190px] text-xl text-white cursor-pointer mb-2" id="x">X</p>
+        <img src="./assets/images/index/vale.png" alt="" class="w-[400px]">
+    </div>
 
     <!-- Empieza HEADER -->
     <header class="w-full h-[80px] md:h-[120px]">
@@ -277,14 +282,13 @@
                     <h2 class="text-lg font-semibold">JOIN THE POTTERY COMMUNITY</h2>
                     <p class="mb-16 mt-4 tracking-[2px]">Be the first to see our new products and receive special
                         offers.</p>
-                    <form action="" class="flex flex-col gap-3" id="suscribeForm" novalidate>
+                    <form action="" class="flex flex-col gap-3" id="suscribeForm">
                         <input type="text" name="name" id="inputName" placeholder="Name"
                             class="w-[400px] h-[50px] border p-2 focus:border-black outline-none" required>
-                        <input type="text" name="email" id="inputEmail" placeholder="Email"
-                            class="w-[400px] h-[50px] border p-2 focus:border-black outline-none" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
-                            ">
+                        <input type="email" name="email" id="inputEmail" placeholder="Email"
+                            class="w-[400px] h-[50px] border p-2 focus:border-black outline-none" required>
                         <input type="password" name="password" id="inputPassword" placeholder="***********"
-                            class="w-[400px] h-[50px] border p-2 focus:border-black outline-none" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$">
+                            class="w-[400px] h-[50px] border p-2 focus:border-black outline-none" required pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}">
                         <button class="w-[400px] border border-black h-[50px] text-black hover:text-white hover:bg-black"> SUBSCRIBE</button>
                     </form>
                 </div>
